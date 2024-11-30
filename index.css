@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 1rem;
@@ -37,11 +41,15 @@ nav a {
     background-color: red;
     width: 100px;
     color: white;
-    ;
+}
+.view {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
 }
 .movies-slider {
     display: flex;
-    border: 1px solid black;
+    background-color: whitesmoke;
     justify-content: space-between;
     height: 10rem;
     align-items: center;
@@ -51,45 +59,11 @@ nav a {
     font-size: medium;
     font-weight: bold;
 }
-.movie-card-1{
+.movie-card {
     width: 150px;
     margin: 10px;
-    padding: 15px;
-  }
-.movie-card-2{
-    width: 150px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid black
-    flex: 1;
-  }
-.movie-card-3{
-    width: 150px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid black
-    flex: 1;
-}
-.movie-card-4{
-    width: 150px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid black
-    flex: 1;
-}
-.movie-card-5{
-    width: 150px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid black
-    flex: 1;
-}
-.movie-card-6{
-    width: 150px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid black
-    flex: 1;
+    padding: 35px;
+    background-color: white;
 }
 .cta-button {
     background-color: red;
@@ -111,12 +85,16 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
 }
-footer a {
-    gap: 1rem;
+footer nav {
+   margin: 20px 0
+}
+footer nav a {
+    padding: 20px;
+    row-gap: 20px;
     text-decoration: none;
     color: rgb(53, 45, 45);
+    margin: 0;
 }
 footer img {
     flex: 1;
