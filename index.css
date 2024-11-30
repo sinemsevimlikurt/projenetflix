@@ -37,10 +37,17 @@ nav a {
 .checked {
     color: orange;
 }
+.movie-details li {
+    list-style: none;
+}
 .btn {
     background-color: red;
-    width: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
     color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 .view {
     display: flex;
@@ -87,7 +94,8 @@ footer {
     gap: 20px;
 }
 footer nav {
-   margin: 20px 0
+   margin: 20px 0;
+   text-align: center;
 }
 footer nav a {
     padding: 20px;
