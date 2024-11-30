@@ -10,18 +10,17 @@
     <body>
     <header>
         <img class="logo" src="./images/witflix-logo (2).svg"/>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Topic 1</a></li>
-                <li><a href="#">Topic 2</a></li>
-                <li><a href="#">Topic 3</a></li>
-                <li><a href="#">Topic 4</a></li>
-            </ul>
+        <nav>
+                <a href="#">Topic 1</a>
+                <a href="#">Topic 2</a>
+                <a href="#">Topic 3</a>
+                <a href="#">Topic 4</a>
         </nav>
         <div class="header-icons">
             <input type="text" placeholder="Search">
             <i class="icon-search">🔍</i>
             <i class="icon-bell">🔔</i>
+            <img src="/"/>
         </div>
     </header>
     <main>
@@ -49,34 +48,62 @@
             <li><span>Genre:</span> Lorem ipsum, Lorem Piksum</li>
             <li><span>Tags:</span> Lorem ipsum, Lorem Piksum</li>
         </ul>
-        <div class="btn btn-lg">
+        <div class="btn">
             <i class="fas fa-play"></i>
             <button>Play Now</button>
         </div>
         </div>
     </main>
-    <section>
-        <section>
-            <div class="suggestion-row"></div>
-            <div class="suggestion-row"></div>
-            <div class="suggestion-row"></div>
-            <div class="suggestion-title">
-                <h2>Popular Movies</h2>
-                <a href="/">View All</a>
+    <section class="movies-section">
+        <h2 class="section-title">Popular Movies</h2>
+        <div class="movies-slider">
+            <div class="movie-card-1">
+                <p>MOVIE NAME</p>
+                <span class="maturity-rating">+16</span>
+                <span class="duraction">2 h 21 min</span>
+                <button class="cta-button">Play Now</button>
             </div>
-            <div class="section-content">
-                <div class="suggestion-item"></div>
-                <div class="suggestion-item-content">
-                    <h3>MOVIE NAME</h3>
-                    <div class="suggestion-details">
-                        <span class="maturity-rating">+16</span>
-                        <span class="duraction">2 h 21 min</span>
-                        <i class="fas fa-play"></i>
-                        <button>Play Now</button>
-                    </div>
-                </div>
+            <div class="movie-card-2">
+                <p>MOVIE NAME</p>
+                <span class="maturity-rating">+16</span>
+                <span class="duraction">2 h 21 min</span>
+
+                <button class="cta-button">Play Now</button>
             </div>
-       </section>
+            <div class="movie-card-3">
+                <p>MOVIE NAME</p>
+                <span class="maturity-rating">+16</span>
+                <span class="duraction">2 h 21 min</span>
+
+                <button class="cta-button">Play Now</button>
+            </div>
+        </div>
+      </section>
+<section class="movies-section">
+    <h2 class="section-title">RECOMMENDED FOR YOU</h2>
+    <div class="movies-slider">
+        <div class="movie-card-4">
+            <p>MOVIE NAME</p>
+            <span class="maturity-rating">+16</span>
+            <span class="duraction">2 h 21 min</span>
+            <button class="cta-button">Play Now</button>
+        </div>
+        <div class="movie-card-5">
+            <p>MOVIE NAME</p>
+            <span class="maturity-rating">+16</span>
+            <span class="duraction">2 h 21 min</span>
+
+            <button class="cta-button">Play Now</button>
+        </div>
+        <div class="movie-card-6">
+            <p>MOVIE NAME</p>
+            <span class="maturity-rating">+16</span>
+            <span class="duraction">2 h 21 min</span>
+
+            <button class="cta-button">Play Now</button>
+        </div>
+    </div>
+      </section>
     <footer>
         <div>
             <nav>
@@ -96,7 +123,7 @@
         <div>
             <p>Apps</p>
             <img src="./images/appstore-icon.svg">
-            <img src="./images/appstore-icon.svg">
+            <img src="./images/googleplay-icon.svg">
         </div>
     </footer>
 </body>

@@ -1,47 +1,108 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
     background-color: #f8f8f8;
 }
 .logo {
-    padding: 0;
-    float: left;
-    width: 20%;
-    height: 5%;
-    margin: 0 auto;
+    width: 200px;
 }
-.nav ul {
+body header nav {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;   
 }
-.nav ul a {
+nav a {
     text-decoration: none;
+    align-items: center;
+    color: black;
 }
 .header-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     margin: 10px;
+    justify-content: center;
 }
 .checked {
     color: orange;
 }
-.btn btn-lg {
+.btn {
+    background-color: red;
+    width: 100px;
+    color: white;
+    ;
+}
+.movies-slider {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+.movies-slider p {
+    font-size: medium;
+    font-weight: bold;
+}
+.movie-card-1{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+  }
+.movie-card-2{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black
+    flex: 1;
+  }
+.movie-card-3{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black
+    flex: 1;
+}
+.movie-card-4{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black
+    flex: 1;
+}
+.movie-card-5{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black
+    flex: 1;
+}
+.movie-card-6{
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black
+    flex: 1;
+}
+.cta-button {
     background-color: red;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    width: 90px;
+}
+.maturity-rating {
+    border: 1px solid black;
+    border-radius: 5px;
 }
 footer {
     background-color: #f8f8f8;
@@ -53,11 +114,11 @@ footer {
     flex-wrap: wrap;
 }
 footer a {
+    gap: 1rem;
     text-decoration: none;
     color: rgb(53, 45, 45);
 }
 footer img {
     flex: 1;
-    width: 50px;
     height: 30px;
 }
