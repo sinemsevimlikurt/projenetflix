@@ -10,17 +10,18 @@
     <body>
     <header>
         <img class="logo" src="./images/witflix-logo (2).svg"/>
-        <nav>
-            <a href="/">Topic1 </a>
-            <a href="/">Topic2 </a>
-            <a href="/">Topic3</a>
-            <a href="/">Topic4</a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Topic 1</a></li>
+                <li><a href="#">Topic 2</a></li>
+                <li><a href="#">Topic 3</a></li>
+                <li><a href="#">Topic 4</a></li>
+            </ul>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="search" >
-            <i class="fas fa-magnifying-glass icon search"></i>
-            <i class="fas fa-bell search"></i>
-           <img class="profile search">
+        <div class="header-icons">
+            <input type="text" placeholder="Search">
+            <i class="icon-search">🔍</i>
+            <i class="icon-bell">🔔</i>
         </div>
     </header>
     <main>
@@ -55,69 +56,27 @@
         </div>
     </main>
     <section>
-        <div class="suggestion-row">Populer Movies</div>
-        <div class="suggestion-row">View All</div>
-        <div class="suggestin-row">
+        <section>
+            <div class="suggestion-row"></div>
+            <div class="suggestion-row"></div>
+            <div class="suggestion-row"></div>
             <div class="suggestion-title">
-                <h2>MOVIE NAME</h2>
-                <a href="/"></a>
+                <h2>Popular Movies</h2>
+                <a href="/">View All</a>
             </div>
-            <div class="suggestion-content">
-                <div class="suggestion-item"><span class="maturity-rating">16+</span>
-                    <span class="duration">2 h 21 min</span></div>
-                    <i class="fas fa-play"></i>
-                    <button>Play Now</button>
-                    <div class="suggestion-title">
-                        <h2>MOVIE NAME</h2>
-                        <a href="/"></a>
+            <div class="section-content">
+                <div class="suggestion-item"></div>
+                <div class="suggestion-item-content">
+                    <h3>MOVIE NAME</h3>
+                    <div class="suggestion-details">
+                        <span class="maturity-rating">+16</span>
+                        <span class="duraction">2 h 21 min</span>
+                        <i class="fas fa-play"></i>
+                        <button>Play Now</button>
                     </div>
-                    <div class="suggestion-content">
-                        <div class="suggestion-item"><span class="maturity-rating">16+</span>
-                            <span class="duration">2 h 21 min</span></div>
-                            <i class="fas fa-play"></i>
-                            <button>Play Now</button>
-                            <div class="suggestion-title">
-                                <h2>MOVIE NAME</h2>
-                                <a href="/"></a>
-                            </div>
-                            <div class="suggestion-content">
-                                <div class="suggestion-item"><span class="maturity-rating">16+</span>
-                                    <span class="duration">2 h 21 min</span></div>
-                                    <i class="fas fa-play"></i>
-                                    <button>Play Now</button>
-                                    <div class="suggestion-row">Recommended for You</div>
-                                    <div class="suggestion-row">View All</div>
-                                    <div class="suggestion-title">
-                                        <h2>MOVIE NAME</h2>
-                                        <a href="/"></a>
-                                    </div>
-                                    <div class="suggestion-content">
-                                        <div class="suggestion-item"><span class="maturity-rating">16+</span>
-                                            <span class="duration">2 h 21 min</span></div>
-                                            <i class="fas fa-play"></i>
-                                            <button>Play Now</button>
-                                            <div class="suggestion-title">
-                                                <h2>MOVIE NAME</h2>
-                                                <a href="/"></a>
-                                            </div>
-                                            <div class="suggestion-content">
-                                                <div class="suggestion-item"><span class="maturity-rating">16+</span>
-                                                    <span class="duration">2 h 21 min</span></div>
-                                                    <i class="fas fa-play"></i>
-                                                    <button>Play Now</button>
-                                                    <div class="suggestion-title">
-                                                        <h2>MOVIE NAME</h2>
-                                                        <a href="/"></a>
-                                                    </div>
-                                                    <div class="suggestion-content">
-                                                        <div class="suggestion-item"><span class="maturity-rating">16+</span>
-                                                            <span class="duration">2 h 21 min</span></div>
-                                                            <i class="fas fa-play"></i>
-                                                            <button>Play Now</button>
-
+                </div>
             </div>
-        </div>
-    </section>
+       </section>
     <footer>
         <div>
             <nav>

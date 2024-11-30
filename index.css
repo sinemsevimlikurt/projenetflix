@@ -1,5 +1,14 @@
 body {
-    padding: 1rem;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
 }
 .logo {
     padding: 0;
@@ -8,28 +17,47 @@ body {
     height: 5%;
     margin: 0 auto;
 }
-nav {
+.nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 3rem;
-    padding: 0;
+    gap: 15px;
+    list-style: none;
 }
-nav a {
+.nav ul a {
     text-decoration: none;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
 }
-.search {
-    flex: 0 0 auto;
+.header-icons {
     display: flex;
-    gap: 1px;
-    justify-content: flex-end;
     align-items: center;
-    padding: 0;
-    margin: 0.5rem;
+    gap: 10px;
+    margin: 10px;
 }
 .checked {
     color: orange;
+}
+.btn btn-lg {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(53, 45, 45);
+}
+footer img {
+    flex: 1;
+    width: 50px;
+    height: 30px;
 }
