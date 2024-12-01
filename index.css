@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 body {
     font-family: Arial, sans-serif;
     margin: 1rem;
@@ -13,48 +10,76 @@ header {
     background-color: #f8f8f8;
 }
 .logo {
-    width: 200px;
+    width: 13rem;
 }
 body header nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    list-style: none;   
+    list-style: none;  
+    font-weight: bold; 
 }
 nav a {
     text-decoration: none;
     align-items: center;
     color: black;
 }
+.hero-content {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+.hero-content p {
+   max-width: 50rem;
+   font-size: 1.5rem;
+}
 .header-icons {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: 10px;
+    margin: 0.9rem;
     justify-content: center;
 }
 .checked {
     color: orange;
+}
+.movie-details {
+    margin: 1.2rem;
 }
 .movie-details li {
     list-style: none;
 }
 .btn {
     background-color: red;
-    padding: 10px 20px;
+    padding: 0.8rem 1.2rem;
     cursor: pointer;
     color: white;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 0.9rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 .view {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.titles {
+    display: flex;
+    justify-content: space-between;
 }
 .movies-slider {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+.movies-slider1 {
     display: flex;
     background-color: whitesmoke;
     justify-content: space-between;
@@ -62,49 +87,90 @@ nav a {
     align-items: center;
     box-sizing: border-box;
 }
+.movies-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
 .movies-slider p {
     font-size: medium;
     font-weight: bold;
 }
+.movies-slider1 p {
+    font-size: medium;
+    font-weight: bold;
+}
 .movie-card {
-    width: 150px;
-    margin: 10px;
-    padding: 35px;
+    flex: 0 0 auto;
+    width: 15rem;
+    margin: 0.8rem;
+    padding: 2rem;
+    background-color: white;
+}
+.movie-card1 {
+    width: 15rem;
+    margin: 0.8rem;
+    padding: 2rem;
     background-color: white;
 }
 .cta-button {
+    display: flex;
+    flex-direction: column;
     background-color: red;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 0.8rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    width: 90px;
+    width: 6rem;
 }
 .maturity-rating {
     border: 1px solid black;
     border-radius: 5px;
 }
+.movies-section1 {
+    margin-bottom: 15rem;
+}
 footer {
     background-color: #f8f8f8;
-    padding: 20px;
+    padding: 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
+    gap: 1.2rem;
 }
 footer nav {
-   margin: 20px 0;
+   margin: 1.2rem 0;
    text-align: center;
 }
 footer nav a {
-    padding: 20px;
-    row-gap: 20px;
+    padding: 1.2rem;
+    row-gap: 1.2rem;
     text-decoration: none;
     color: rgb(53, 45, 45);
     margin: 0;
 }
 footer img {
     flex: 1;
-    height: 30px;
+    height: 2rem;
+}
+@media (max-width: 428px) {
+    html {
+        font-size: 10px;
+    }
+    .bar {
+        max-width: 5rem;
+    }
+    footer {
+        flex-direction: column;
+        justify-self: baseline;
+        align-items: baseline;
+        margin-top: 1rem;    
+    }
+    .movies.slider {
+        flex-wrap: wrap;
+    }
+    .movies-slider1 {
+        display: none;
+    }
 }
